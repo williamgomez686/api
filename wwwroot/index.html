@@ -2,19 +2,19 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>To-do CRUD</title>
+    <title>Tareas</title>
     <link rel="stylesheet" href="css/site.css" />
 </head>
 <body>
-    <h1>To-do CRUD</h1>
-    <h3>Add</h3>
+    <h1>Tareas CRUD</h1>
+    <h3>Nuevo</h3>
     <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
-        <input type="text" id="add-name" placeholder="New to-do">
+        <input type="text" id="add-name" placeholder="Agrea nueva Tarea">
         <input type="submit" value="Add">
     </form>
 
     <div id="editForm">
-        <h3>Edit</h3>
+        <h3>Editar</h3>
         <form action="javascript:void(0);" onsubmit="updateItem()">
             <input type="hidden" id="edit-id">
             <input type="checkbox" id="edit-isComplete">
@@ -28,8 +28,8 @@
 
     <table>
         <tr>
-            <th>Is Complete?</th>
-            <th>Name</th>
+            <th>Esta Terminado? |</th>
+            <th>Nombre</th>
             <th></th>
             <th></th>
         </tr>

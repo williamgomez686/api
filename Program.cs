@@ -23,6 +23,14 @@ namespace api
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                    
                 });
+
+            // //Codigo para HttpClient
+            // builder.Services.AddScoped(sp => 
+            // new HttpClient 
+            // { 
+            //     BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) 
+            // });
     }
 }
